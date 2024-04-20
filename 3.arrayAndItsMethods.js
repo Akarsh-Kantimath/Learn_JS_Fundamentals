@@ -52,7 +52,7 @@ for (let i =0; i < marks.length; i++) {
 }
 console.log(sum)
 
-//reduce function for array
+//Sum of an array - reduce function for array
 var wallet = [343,454,120,87,578]
 let twallet = wallet.reduce((sum,tamount) => sum + tamount, 0)
 console.log(twallet)
