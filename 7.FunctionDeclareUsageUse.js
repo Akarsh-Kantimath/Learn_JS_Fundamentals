@@ -1,6 +1,6 @@
 //What is function - block of code that can be exceuted by wrapping them in a module 
 
-//ketword function to be used continued with name then () to pass the parameter
+//keyword function to be used continued with name then () to pass the parameter
 
 // adding two parameters 
 
