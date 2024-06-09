@@ -20,6 +20,7 @@ console.log(splitDay[1].trim().length) //3
 
 //if the number are received as string wish to change them to integer then parseInt() method is used
 //and if we want to change the integer to string type then .toString() method is used
+//typeof() is used to identify the type of variable
 
 let date = '23', nextDate = '27'
 console.log(typeof(date))
