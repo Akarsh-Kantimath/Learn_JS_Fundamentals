@@ -15,5 +15,5 @@ console.log(arrayNumber)
 arrayNumber.sort((a, b) => a - b) 
 console.log(arrayNumber) // ascending sort of numbers
 
-//if we want to reverse or descenting sort of number -> then change the logic as ((a,b) => b -a )
-console.log(arrayNumber.sort((a,b) => b -a))
+//if we want to reverse or descenting sort of number -> then change the logic as ((a,b) => b - a)
+console.log(arrayNumber.sort((a,b) => b - a))
