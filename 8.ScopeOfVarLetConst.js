@@ -1,4 +1,4 @@
-//var keyword scope is applicable in Global level and Functional level not a block level {}
+//var keyword scope is applicable in Global level and Functional level but, not at block level {}
 var x = "Hello World"
 
 console.log(x) //Hello World - global level declaration of var keyword
