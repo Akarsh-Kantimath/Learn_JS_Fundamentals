@@ -40,3 +40,18 @@ console.log(!g)
 
 // difference let and const
 // with a let key we can reassign while with const - it remains constant throughout the script
+
+//in JS can the reassigning functionality can be done by VAR key ?
+//Yes, in JavaScript, the `var` keyword can be used to declare and reassign variables. However, it is considered best practice to use `let` and `const` instead of `var` for variable declaration and assignment in modern JavaScript to avoid some of the pitfalls associated with `var`.
+
+// Using `var` for variable declaration and assignment in JavaScript can lead to some pitfalls, including:
+
+// 1. **Function scope**: Variables declared using `var` have function scope, which can sometimes lead to unexpected behavior if not carefully managed.
+
+// 2. **Hoisting**: Variables declared with `var` are hoisted to the top of their containing function or global scope. This means that you can use a variable before it's declared in the code, which can lead to confusion and bugs.
+
+// 3. **No block scope**: Variables declared with `var` are not block-scoped. This means that variables declared inside blocks (such as if statements or loops) using `var` are accessible outside those blocks, which can lead to unintended behavior.
+
+// 4. **Potential for accidental global scope**: If you declare a variable using `var` outside of any function, it becomes a global variable. This can lead to namespace collisions and hard-to-debug issues.
+
+// For these reasons, it is generally recommended to use `let` and `const` for variable declaration and assignment in modern JavaScript, as they have block scope and const variables cannot be reassigned, which can help prevent common bugs and make the code more maintainable.
