@@ -13,11 +13,28 @@ class Person {
         return "USA"
     }
     //constructor is a method which executes by default when you create object of the class
+    constructor(firstName, lastName){
+        //Here paramterised firstName, lastName are instance variables
+        //They will initialized, when the object of the class is called i.e new Person(firstName,lastName)
+        //value of the parametrised firstName, lastName scope will be limited to constructor() body, to have the values accesible across the class ouside the scope of constructor() we use this.variableName 
+        this.scopeFirstName = firstName
+        this.scopeLastName = lastName 
+
+    }
+    //Confusion between getters and methods -> getters are the class properties they are not methods
+    fullName(){
+        return this.scopeFirstName + " " + this.scopeLastName
+    }
 
 }
 
-//Object of class can be created as
-let person1 = new Person()
+//Object of class can be created as, We also call object as a instance of the class 
+let person1 = new Person("Tim", "Joseph") //At a run time, we are sending parameterized value to the constructor. Constructor will be default called, when you create a object.
 console.log(person1.age)
 console.log(person1.location)
 console.log(person1.location1)
+console.log(person1.fullName()) // Tim Joseph
+
+//Why class -> One defined prototype method like fullName() can be used n no. of times by passing differnt instance variables to get results
+let person2 = new Person("Akarsh", "K")
+console.log(person2.fullName()) // Akarsh K
